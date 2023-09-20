@@ -1,0 +1,40 @@
+/* Estilo para centralizar o texto no elemento h1 */
+h1{
+    text-align: center;
+}
+
+/* Estilo para centralizar elementos com a classe 'container' no meio da pagina */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para o resultado no visor da calculadora */
+.resultado {
+    width: 306px;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    border: 3px solid #010000;
+    padding: 10px;
+}
+
+/* Estilo para os botões numericos da calculadora */
+.botao-calculadora {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+}
+
+/* Estilo para o botão de reset da calculadora */
+.botao-resetar{
+    width: 334px;
+    height: 80px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+

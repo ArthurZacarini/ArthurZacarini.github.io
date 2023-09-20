@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"> <!--usa-se para conseguir linkar o css nesta pagina -->
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <div class="container"> <!--utilizar a classe "container" para centralizar a pagina-->
+    <table>
+        <tr> <!--visor da calculadora-->
+            <td colspan="4"><input type="text" id="display" class="resultado" readonly></td>
+        </tr>
+        <tr> <!--botoes para digitar numeros e operadores-->
+            <td><input type="button" value="7" class="botao-calculadora" onclick="addToDisplay('7')"></td>
+            <td><input type="button" value="8" class="botao-calculadora" onclick="addToDisplay('8')"></td>
+            <td><input type="button" value="9" class="botao-calculadora" onclick="addToDisplay('9')"></td>
+            <td><input type="button" value="/" class="botao-calculadora" onclick="addToDisplay('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="botao-calculadora" onclick="addToDisplay('4')"></td>
+            <td><input type="button" value="5" class="botao-calculadora" onclick="addToDisplay('5')"></td>
+            <td><input type="button" value="6" class="botao-calculadora" onclick="addToDisplay('6')"></td>
+            <td><input type="button" value="*" class="botao-calculadora" onclick="addToDisplay('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="botao-calculadora" onclick="addToDisplay('1')"></td>
+            <td><input type="button" value="2" class="botao-calculadora" onclick="addToDisplay('2')"></td>
+            <td><input type="button" value="3" class="botao-calculadora" onclick="addToDisplay('3')"></td>
+            <td><input type="button" value="-" class="botao-calculadora" onclick="addToDisplay('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="botao-calculadora" onclick="addToDisplay('0')"></td>
+            <td><input type="button" value="." class="botao-calculadora" onclick="addToDisplay('.')"></td>
+            <td><input type="button" value="=" class="botao-calculadora" onclick="calculate()"></td>
+            <td><input type="button" value="+" class="botao-calculadora" onclick="addToDisplay('+')"></td>
+        </tr>
+        <tr> <!--Botao de resetar o calculo-->
+            <td colspan="4"><input type="button" value="C" class="botao-resetar" onclick="clearDisplay()"></td>
+        </tr>
+    </table>
+</div>
+    <script type="text/javascript" src="script.js"></script> <!--Linkar o JS nesta pagina-->
+</body>
+</html>
